@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/bg4.png" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: rgb(253, 201, 138);
+    }
+
+    .jumbotron h5,h3 {
+      text-align: center;
+    }
+    .alert{margin: 0px;}
+    .glow{
+      font-size: 50px;
+      color: rgb(43, 226, 113);
+      text-align: center;
+      -webkit-animation: glow is ease-in-out infinite alternate;
+      -moz-animation: glow is ease-in-out infinite alternate;
+      animation: glow is ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #eeeeee,0 0 20px #000000,0 0 30px #000000,0 0 40px #000000,0 0 50px #9554b3,0 0 60px #9554b3,0 0 70px #9554b3;}
+  to {
+    text-shadow: 0 0 20px #eeeeee,0 0 30px #ff4da6,0 0 40px #ff4da6,0 0 50px #ff4da6,0 0 60px #ff4da6,0 0 70px #ff4da6,0 0 80px #ff4da6;}
+}
+  </style>
+
+</head>
+
+<body>
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+  
+    <h5 class="display-3 glow">WELCOME TO GSMS .@GSM we care </h5><br><br><br><br>
+    <div class="container">
+      <div class="jumbotron">
+        <h1><h3><b>Our services includes</b></h3></h1>      
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <p class="lead"><b><font color="black"><text align="left">Air coditioning repair</font></b></p>
+      <p> your vehicle's air conditioning system is going to be under a serious strain before long.
+         If you haven't had your system serviced in a while, now's the time.
+          While most newer vehicles may simply be able to get away with having their A/C recharged, 
+         older cars and trucks may require a little extra attention.</p>>
+   </div>
+  </div>>
+  
+  <div class="section withFullWithColumn">
+    <div class="container">
+      <div class="grid">
+        <div class="column form">
+           <img src="{% static "images//tire.PNG" %}" alt="Wheel alignment!" /
+          
+          <p  class="lead"class="text-left"><b>Wheel alignment</b></p>
+          
+        </div>
+
+      </div>
+    </div>
+      </div>
+  
+  <p class="lead"><font color="black"><b>body repair</font></b></p>
+  <p class="lead"><b>power steering fluid check and top cup</b></p>
+  <p class="lead"><b>charging system check</b></p>
+  <p class="lead"><b>oil and oil filter check and replacement</b></p>
+  <p class="lead"><b>engine check up</b></p>
+  <p class="lead"><b>tire repair and replacement</b></p>
+  
+  </div><div class="container">
+    <div class="jumbotron"style="margin-bottom: 0px;margin-top: 0px;">
+  <marquee behavior="scroll" direction="left">
+    <h6 class="display-3 glow">GSMS we service your vehicle at your convinience</h6>
+   <img src="{% static "images/ferrari.png" %}" width="100" height="80" alt="ferrari" />
+    <img src="{% static "images/ford.png" %}" width="120" height="80" alt="ford" />
+   <img src="{% static "images/lambo.png" %}" width="120" height="80" alt="tuktuk" />
+   <img src="{% static "images/mahindra.png" %}" width="120" height="80" alt="TOYOTA" />
+   <img src="{% static "images/tvs.png" %}" width="120" height="80" alt="tvs" />
+   <img src="{% static "images/tata.png" %}" width="120" height="80" alt="tata" />
+   <img src="{% static "images/hero.png" %}" width="120" height="80" alt="hero" />
+   <img src="{% static "images/rolls.png" %}" width="120" height="80" alt="rolls" />
+   <img src="{% static "images/suzuki.png" %}" width="120" height="80" alt="suzuki" />
+ </marquee>
+</div>
+</div>
+<div class="container">
+  <div class="jumbotron"style="margin-bottom: 0px;margin-top: 0px;">
+  {% include "vehicle/customer_mechanic_cards.html" %}
+  </div>
+  </div>
+<br><br><br><br><br>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>
